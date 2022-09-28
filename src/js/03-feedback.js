@@ -4,13 +4,13 @@ const form = document.querySelector('form');
 const email = document.querySelector('[name=email]');
 const message = document.querySelector('[name=message]');
 
-currentForm = {
+const currentForm = {
   mail: '',
   mes: '',
 };
 
 try {
-  savedForm = JSON.parse(localStorage.getItem('feedback-form-state'));
+  const savedForm = JSON.parse(localStorage.getItem('feedback-form-state'));
   email.value = savedForm.mail;
   message.value = savedForm.mes;
 } catch {}
