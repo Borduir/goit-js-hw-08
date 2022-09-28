@@ -1,8 +1,8 @@
 import throttle from 'lodash.throttle';
 
-form = document.querySelector('form');
-email = document.querySelector('[name=email]');
-message = document.querySelector('[name=message]');
+const form = document.querySelector('form');
+const email = document.querySelector('[name=email]');
+const message = document.querySelector('[name=message]');
 
 currentForm = {
   mail: '',
