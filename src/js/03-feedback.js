@@ -25,7 +25,9 @@ form.addEventListener(
   }, 500)
 );
 
-form.addEventListener('submit', () => {
-  console.log('curretForm');
+form.addEventListener('submit', e => {
+  e.preventDefault();
+  console.log(currentForm);
   localStorage.clear();
+  form.reset();
 });

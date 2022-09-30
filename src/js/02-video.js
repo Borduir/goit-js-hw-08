@@ -1,3 +1,4 @@
+'use strict';
 import Player from '@vimeo/player';
 import throttle from 'lodash.throttle';
 
@@ -7,7 +8,7 @@ const player = new Player(iframe);
 if (!localStorage.getItem('CurrentTime')) {
   player.setCurrentTime(0);
 } else {
-  localTime = localStorage.getItem('CurrentTime');
+  const localTime = localStorage.getItem('CurrentTime');
   player.setCurrentTime(localTime);
 }
 
